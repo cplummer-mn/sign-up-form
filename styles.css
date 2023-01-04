@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
+
+html {
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Dokdo', cursive;
+    font-size: 115px;
+    color: rgb(255, 255, 255);
+    margin-left: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #5D6063;
+    background-color: #d2ebf7;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 0;
+  }
+
+.background-image {
+    height: 100%;
+    width: auto;
+}
+
+.logo-box {
+    display: flex;
+    width: 100%;
+    height: 19vh;
+    margin-top: -700px;
+    background-color: rgba(0, 0, 0, 0.678);
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-credit {
+    color: rgba(218, 238, 240, 0.877);
+    text-align: center;
+    margin-top: auto;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(73, 73, 73, 0.685);
+    padding: 5px;
+}
+
+a {
+    color: rgb(218, 238, 240);
+}
+
+.text-box,
+.form-div {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Michroma', sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+.form-div {
+    background-color: #C78D6D;
+    box-shadow: 2px 5px 5px rgb(124, 124, 124);
+    margin-bottom: 10px;
+}
+
+button {
+    margin-bottom: -300px;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row label {
+    margin-bottom: 7.5px;
+    font-weight: bold;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row input[type='number'],
+  .form-row input[type='password'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 14px;
+    width: 300px;
+  }
+
+  .form-row input[type='text']:invalid,
+  .form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+  }
+
+  .form-big-row {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+  }
+  
+  .text-box {
+    font-size: 25px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 61px;
+  }
+
+  .second-text {
+    margin-top: 30px;
+  }
+
+  .submit-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2ebf7;
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .border {
+    width: 20vh;
+    background-color: #1a0d06;
+  }
+
+  button {
+    font-size: 36px;
+    font-weight: bold;
+
+    background-color: #C78D6D;
+  
+    border: solid 2px black;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+
+  .user-already,
+  .user-already a {
+    margin-top: 30px;
+    color: black;
+    font-weight: bold;
+  }
