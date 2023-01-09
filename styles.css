@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
 
 html {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 h1 {
     font-family: 'Dokdo', cursive;
-    font-size: 115px;
+    font-size: 7vh;
     color: rgb(255, 255, 255);
     margin-left: 25px;
 }
@@ -19,11 +20,11 @@ h1 {
 
 body {
     color: #5D6063;
-    background-color: #d2ebf7;
+    background-color: #DEDDDD;
     font-size: 16px;
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 100%;
     padding: 0;
   }
 
@@ -36,20 +37,22 @@ body {
     display: flex;
     width: 100%;
     height: 19vh;
-    margin-top: -700px;
-    background-color: rgba(0, 0, 0, 0.678);
+    margin-top: -950px;
+    background-color: rgba(0, 0, 0, 0.699);
     justify-content: center;
     align-items: center;
 }
 
 .logo-image {
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: auto;
 }
 
 .logo-div {
     display: flex;
     flex-direction: column;
+    flex: 0 1 auto;
+    min-width: 350px;
 }
 
 .photo-credit {
@@ -58,7 +61,7 @@ body {
     margin-top: auto;
     font-size: 18px;
     font-weight: bold;
-    background-color: rgba(73, 73, 73, 0.685);
+    background-color: rgba(73, 73, 73, 0.363);
     padding: 5px;
 }
 
@@ -80,10 +83,16 @@ a {
     box-sizing: border-box;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .form-div {
-    background-color: #C78D6D;
+    background-color: #DA7B37;
     box-shadow: 2px 5px 5px rgb(124, 124, 124);
-    margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 button {
@@ -95,7 +104,6 @@ button {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .form-row label {
@@ -110,7 +118,8 @@ button {
   .form-row input[type='text'],
   .form-row input[type='email'],
   .form-row input[type='number'],
-  .form-row input[type='password'] {
+  .form-row input[type='password'],
+  .form-row input[type='tel'] {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
@@ -120,8 +129,11 @@ button {
   }
 
   .form-row input[type='text']:invalid,
-  .form-row input[type='email']:invalid {
-  border: 1px solid #D55C5F;
+  .form-row input[type='email']:invalid,
+  .form-row input[type='number']:invalid,
+  .form-row input[type='password']:invalid,
+  .form-row input[type='tel']:invalid {
+  border: 3px solid #ff0004;
   color: #D55C5F;
   box-shadow: none; /* Remove default red glow in Firefox */
   }
@@ -148,29 +160,33 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #d2ebf7;
-    padding: 100px;
+    background-color: #626064;
+    padding: 45px;
     box-sizing: border-box;
+    margin: 0;
   }
 
   .main-content {
     display: flex;
     flex-direction: column;
+    flex-grow: 2 1 auto;
+    min-width: 100px;
   }
 
   .border {
     width: 20vh;
-    background-color: #1a0d06;
+    background-color: #18110D;
+    flex: 0 2 auto;
   }
 
   button {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
 
-    background-color: #C78D6D;
+    background-color: #DA7B37;
   
     border: solid 2px black;
-    border-radius: 3px;
+    border-radius: 8px;
   
     padding: 10px 40px;
     cursor: pointer;
@@ -181,4 +197,18 @@ button {
     margin-top: 30px;
     color: black;
     font-weight: bold;
+  }
+
+  #password-info-text {
+    color: rgb(0, 0, 0);
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  #password-requirement-text {
+    font-size: 12px;
+    width: 300px;
+    margin-top: 10px;
   }
